@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Validation Practice</title>
+</head>
+<body>
+    <form id="form" style="margin: 30px;">
+        <h1>Validation practice 30mins Trial</h1>
+        <div id="successMsg" class="text-success text-center"></div>
+
+        <label for="fname">Firstname</label>
+            <input type="text" placeholder="Firstname" id="fname">
+            <span id="fnameErrorEl" style="display: none;">
+                <i class="fa fa-times-circle"></i>
+            </span>
+            <span id="fnameSuccessEl" style="display: none;">
+                <i class="fa fa-check-circle"></i>
+            </span>
+        
+        <label for="sname">Surname</label>
+            <input type="text" placeholder="Surname" id="sname">
+            <span id="snameErrorEl" style="display: none;">
+            <i class="fa fa-times-circle"></i>
+            </span>
+            <span id="snameSuccessEl" style="display: none;">
+                <i class="fa fa-check-circle"></i>
+            </span>
+
+        <label for="uname">Username</label>
+            <input type="text" placeholder="Username" id="uname">
+            <span id="unameErrorEl" style="display: none;">
+                <i class="fa fa-times-circle"></i>
+            </span>
+            <span id="unameSuccessEl" style="display: none;">
+                <i class="fa fa-check-circle"></i>
+            </span>
+
+        
+        <label for="psw">Password</label>
+            <input type="password" placeholder="Password" id="psw">
+            <span id="pswErrorEl" style="display: none;">
+                <i class="fa fa-times-circle"></i>
+            </span>
+            <span id="pswSuccessEl" style="display: none;">
+                <i class="fa fa-check-circle"></i>
+            </span>
+
+        <label for="psw">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" id="cpsw">
+            <span id="cpswerrormsg"></span>
+            <span id="cpswErrorEl" style="display: none;">
+                <i class="fa fa-times-circle"></i>
+            </span>
+            <span id="cpswSuccessEl" style="display: none;">
+                <i class="fa fa-check-circle"></i>
+            </span>
+            <div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+    </form>
+    <script src="js/form.js"></script>
+    <style>
+        input[type=text], input[type=email], input[type=password] {
+       width: 94.6%;
+       padding: 12px 20px;
+       margin: 8px 0px;
+       display: inline-block;
+       border: 2px solid lightblue;
+       box-sizing: border-box;
+       border-radius: 5px;
+       color: blue;
+       outline: none;
+       opacity: 1.5;
+     }
+    </style>
+</body>
+</html>
